@@ -1,4 +1,4 @@
-package diseñoPoo;
+package disenio;
 
 public class Estudiante_nota {
     private String nombre;
@@ -12,7 +12,7 @@ public class Estudiante_nota {
         this.nombre = nombre;
         this.materia = materia;
         this.primer_bimestre = primer_bimestre;
-        this.segundo_bimestre = segundo_bimestre
+        this.segundo_bimestre = segundo_bimestre;
     }
 
     /**
@@ -40,9 +40,13 @@ public class Estudiante_nota {
      * @return
      */
     public String presentacion(){
-        String presentacion = String.format("El alumno: %s\nEn la materia: %s\n" +
-                        "Con las notas:\n1er Bim: %.2f\n2do Bim: %.2f\nNota Final: %.2f \n%s"
-                , nombre, materia, primer_bimestre, segundo_bimestre, primer_bimestre + segundo_bimestre, obtener_calificacion(this.primer_bimestre, this.segundo_bimestre));
+        String presentacion = String.format("El alumno: %s\n" +
+                        "En la materia: %s\n" +
+                        "Con las notas:\nPrimer bimestre: %.2f\n" +
+                        "Segundo bimestre: %.2f\n" +
+                        "Nota Final: %.2f \n%s",
+                nombre, materia, primer_bimestre, segundo_bimestre, primer_bimestre + segundo_bimestre,
+                obtener_calificacion(this.primer_bimestre, this.segundo_bimestre));
         return presentacion;
 
     }
