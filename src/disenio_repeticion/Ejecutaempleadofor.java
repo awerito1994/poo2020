@@ -1,7 +1,7 @@
 package disenio_repeticion;
 
 import java.util.Scanner;
-
+//empleando ciclo de repitición for
 public class Ejecutaempleadofor {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);

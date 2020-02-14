@@ -1,7 +1,7 @@
 package disenio_repeticion;
 
 import java.util.Scanner;
-
+//empleando el ciclo de repitición While
 public class Ejecutaempleadowhile {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
