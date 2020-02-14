@@ -40,7 +40,7 @@ public class Estudiante {
      * @return
      */
     public String actualizar_observacion(){
-        if (promedio<=60){
+        if (promedio>=60){
             observacion = "Aprobado";
         }else {
             observacion = "No Aprobado";
